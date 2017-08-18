@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-koket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "author": "",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "eslint": "3.18.0",
+    "eslint-config-airbnb-base": "11.1.2",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-react": "7.0.1"
+  }
+}
