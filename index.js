@@ -51,6 +51,8 @@ const eslintRules = {
       },
     ],
     'vars-on-top': 'off', // We declare variables when we first use them instead of at the top of the function
+    'class-methods-use-this': 'off', // We tried to implement this but it caused problems. Leaving it off for now
+    'no-param-reassign': 'off', // We allow reassigning variables
   },
 };
 
