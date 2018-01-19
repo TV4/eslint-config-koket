@@ -35,7 +35,11 @@ const eslintRules = {
         functions: 'never',
       },
     ],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
     radix: ['error', 'as-needed'],
     curly: ['error', 'multi-line', 'consistent'],
     'consistent-return': 'off',
