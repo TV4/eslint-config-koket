@@ -38,7 +38,6 @@ const eslintRules = {
     'space-before-function-paren': ['error', 'never'],
     radix: ['error', 'as-needed'],
     curly: ['error', 'multi-line', 'consistent'],
-    'object-curly-spacing': ['error', 'never'],
     'consistent-return': 'off',
     'default-case': 'off',
     'func-names': 'off',
