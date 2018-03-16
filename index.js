@@ -42,6 +42,7 @@ const eslintRules = {
     }],
     radix: ['error', 'as-needed'],
     curly: ['error', 'multi-line', 'consistent'],
+    semi: ['error', 'never'],
     'consistent-return': 'off',
     'default-case': 'off',
     'func-names': 'off',
