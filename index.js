@@ -1,6 +1,6 @@
 const eslintRules = {
   extends: [
-    'airbnb-base',
+    'airbnb',
     'plugin:react/recommended',
   ],
   plugins: [
@@ -10,6 +10,7 @@ const eslintRules = {
   env: {
     jest: true,
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -54,10 +55,14 @@ const eslintRules = {
         variables: false,
       },
     ],
+    'no-multiple-empty-lines': ["error", {
+       'max': 1,
+    }],
     'vars-on-top': 'off', // We declare variables when we first use them instead of at the top of the function
     'class-methods-use-this': 'off', // We tried to implement this but it caused problems. Leaving it off for now
     'no-param-reassign': 'off', // We allow reassigning variables
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx'] }], // We allow jsx in js-files
   },
-};
+}
 
-module.exports = eslintRules;
+module.exports = eslintRules
