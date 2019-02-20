@@ -62,7 +62,7 @@ const eslintRules = {
     'class-methods-use-this': 'off', // We tried to implement this but it caused problems. Leaving it off for now
     'no-param-reassign': 'off', // We allow reassigning variables
     'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx'] }], // We allow jsx in js-files
-    'object-curly-newline': ['error', { 'multiline': true }]
+    'object-curly-newline': 'off'
   },
 }
 
