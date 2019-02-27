@@ -55,7 +55,7 @@ const eslintRules = {
         variables: false,
       },
     ],
-    'no-multiple-empty-lines': ["error", {
+    'no-multiple-empty-lines': ["error", { // We only allow one empty line
        'max': 1,
     }],
     'vars-on-top': 'off', // We declare variables when we first use them instead of at the top of the function
@@ -65,6 +65,8 @@ const eslintRules = {
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
     'react/self-closing-comp': 'off', // We don't requre components to be self closed. <div id="video-player"></div> is ok
     'react/sort-comp': 'off', // We allow excpetions to this strict sorting of methods
+    'react/no-danger': 'off', // Sometimes we need to use dangerouslySetInnerHTML
+    'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
   },
 }
 
