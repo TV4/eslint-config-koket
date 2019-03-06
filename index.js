@@ -55,7 +55,7 @@ const eslintRules = {
         variables: false,
       },
     ],
-    'no-multiple-empty-lines': ["error", { // We only allow one empty line
+    'no-multiple-empty-lines': ['error', { // We only allow one empty line
        'max': 1,
     }],
     'vars-on-top': 'off', // We declare variables when we first use them instead of at the top of the function
@@ -67,10 +67,10 @@ const eslintRules = {
     'react/sort-comp': 'off', // We allow excpetions to this strict sorting of methods
     'react/no-danger': 'off', // Sometimes we need to use dangerouslySetInnerHTML
     'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
-    "react/jsx-one-expression-per-line": "off", // We allow multiple expressions per line for example <span>Sparade recept <SvgIcon name="recipe" /></span>
-    "react/jsx-closing-bracket-location": "off", // We don't enforce the location of the closing bracket
-    "react/jsx-first-prop-new-line": "off", // We can decide how to format the props from case to case
-    "react/jsx-max-props-per-line": "off", // We can decide how to format the props from case to case
+    'react/jsx-one-expression-per-line': 'off', // We allow multiple expressions per line for example <span>Sparade recept <SvgIcon name="recipe" /></span>
+    'react/jsx-closing-bracket-location': 'off', // We don't enforce the location of the closing bracket
+    'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
+    'react/jsx-max-props-per-line': 'off', // We can decide how to format the props from case to case
   },
 }
 
