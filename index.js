@@ -56,12 +56,12 @@ const eslintRules = {
       },
     ],
     'no-multiple-empty-lines': ['error', { // We only allow one empty line
-       'max': 1,
+      max: 1,
     }],
     'vars-on-top': 'off', // We declare variables when we first use them instead of at the top of the function
     'class-methods-use-this': 'off', // We tried to implement this but it caused problems. Leaving it off for now
     'no-param-reassign': 'off', // We allow reassigning variables
-    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx'] }], // We allow jsx in js-files
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }], // We allow jsx in js-files
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
     'react/self-closing-comp': 'off', // We don't requre components to be self closed. <div id="video-player"></div> is ok
     'react/sort-comp': 'off', // We allow excpetions to this strict sorting of methods
