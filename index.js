@@ -71,6 +71,7 @@ const eslintRules = {
     'react/jsx-closing-bracket-location': 'off', // We don't enforce the location of the closing bracket
     'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
     'react/jsx-max-props-per-line': 'off', // We can decide how to format the props from case to case
+    'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
   },
 }
 
