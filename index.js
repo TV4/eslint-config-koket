@@ -72,6 +72,7 @@ const eslintRules = {
     'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
     'react/jsx-max-props-per-line': 'off', // We can decide how to format the props from case to case
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
+    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
 
     'jsx-a11y/label-has-for': 'off', // Depricated rule - remove when airbnb is updated
   },
