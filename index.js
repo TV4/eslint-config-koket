@@ -49,6 +49,7 @@ const eslintRules = {
     'no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
     'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
+    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }],
     'react/jsx-closing-bracket-location': 'off', // We don't enforce the location of the closing bracket
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }], // We allow jsx in js-files
     'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
