@@ -34,7 +34,7 @@ const eslintRules = {
       'error', {
         arrays: 'always-multiline',
         objects: 'always-multiline',
-        imports: 'never',
+        imports: 'always-multiline',
         exports: 'always-multiline',
         functions: 'never',
       },
