@@ -22,3 +22,8 @@ and create a ```.eslintrc``` file:
   "extends": "koket",
 }
 ```
+
+## Update eslint dependencies in this package
+```
+npx install-peerdeps eslint-config-airbnb
+```
