@@ -10,7 +10,6 @@ const eslintRules = {
   env: {
     jest: true,
   },
-  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
