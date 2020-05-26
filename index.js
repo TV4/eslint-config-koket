@@ -45,6 +45,21 @@ const eslintRules = {
     'no-multiple-empty-lines': ['error', { max: 1 }], // We only allow one empty line
     'no-param-reassign': 'off', // We allow reassigning variables
     'no-plusplus': 'off', // We allow the unary ++ and -- operators
+    'no-restricted-syntax': [ // We allow for-of-loops
+      'error',
+      {
+        selector: 'ForInStatement',
+        message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+      },
+      {
+        selector: 'LabeledStatement',
+        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+      },
+      {
+        selector: 'WithStatement',
+        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+      },
+    ],
     'no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
     'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
