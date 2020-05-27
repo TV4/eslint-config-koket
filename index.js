@@ -69,6 +69,7 @@ const eslintRules = {
     'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
     'react/jsx-max-props-per-line': 'off', // We can decide how to format the props from case to case
     'react/jsx-one-expression-per-line': 'off', // We allow multiple expressions per line for example <span>Sparade recept <SvgIcon name="recipe" /></span>
+    'react/jsx-props-no-spreading': 'off', // Allowing props spreading
     'react/no-danger': 'off', // Sometimes we need to use dangerouslySetInnerHTML
     'react/self-closing-comp': 'off', // We don't requre components to be self closed. <div id="video-player"></div> is ok
     'react/sort-comp': 'off', // We allow excpetions to this strict sorting of methods
