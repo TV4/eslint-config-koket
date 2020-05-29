@@ -27,6 +27,7 @@ const eslintRules = {
   },
   rules: {
     'arrow-body-style': 'off', // We can choose to include the braces on one-liners if we think it makes the code more readable
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'class-methods-use-this': 'off', // We tried to implement this but it caused problems. Leaving it off for now
     'consistent-return': 'off',
     'comma-dangle': [
