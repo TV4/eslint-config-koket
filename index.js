@@ -43,6 +43,8 @@ const eslintRules = {
     'func-names': 'off',
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
+    'no-await-in-loop': 'off', // We allow await in loops
+    'no-continue': 'off', // We allow continue in loops
     'no-multiple-empty-lines': ['error', { max: 1 }], // We only allow one empty line
     'no-param-reassign': 'off', // We allow reassigning variables
     'no-plusplus': 'off', // We allow the unary ++ and -- operators
