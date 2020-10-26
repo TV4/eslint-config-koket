@@ -11,6 +11,7 @@ const eslintRules = {
     jest: true,
   },
   parserOptions: {
+    ecmaVersion: 2020,
     ecmaFeatures: {
       jsx: true,
     },
