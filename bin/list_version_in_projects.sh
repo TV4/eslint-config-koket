@@ -1,3 +1,3 @@
 #!/bin/bash
-grep -r 'eslint-config-koket' ../ --exclude '*node_modules*' --exclude '*eslint-config-koket*' --include 'package.json'
-
+find .. -maxdepth 2 -name package.json -not -path '../eslint-config-koket/*' \
+  -exec grep -r 'eslint-config-koket' {} \;
