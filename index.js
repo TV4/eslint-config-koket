@@ -88,6 +88,10 @@ const eslintRules = {
     semi: ['error', 'never'],
 
     'jsx-a11y/label-has-for': 'off', // Depricated rule - remove when airbnb is updated
+
+    'function-call-argument-newline': 'off',
+    'function-paren-newline': 'off',
+    'prefer-regex-literals': 'off',
   },
 }
 
