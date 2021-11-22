@@ -89,9 +89,11 @@ const eslintRules = {
 
     'jsx-a11y/label-has-for': 'off', // Depricated rule - remove when airbnb is updated
 
+    // Rules we need to decide how to handle
     'function-call-argument-newline': 'off',
     'function-paren-newline': 'off',
     'prefer-regex-literals': 'off',
+    'no-promise-executor-return': 'off',
   },
 }
 
