@@ -42,6 +42,8 @@ const eslintRules = {
     ],
     'default-case': 'off',
     'func-names': 'off',
+    'function-call-argument-newline': 'off', // We allow line breaks in argument lists
+    'function-paren-newline': 'off', // We allow line breaks in argument lists
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
     'no-await-in-loop': 'off', // We allow await in loops
@@ -67,6 +69,10 @@ const eslintRules = {
     'no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
     'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
+    'react/function-component-definition': ['error', { // We use arrow functions for our components
+      namedComponents: 'arrow-function',
+      unnamedComponents: 'arrow-function',
+    }],
     'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }],
     'react/jsx-closing-bracket-location': 'off', // We don't enforce the location of the closing bracket
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }], // We allow jsx in js-files
@@ -86,15 +92,6 @@ const eslintRules = {
     curly: ['error', 'multi-line', 'consistent'],
     radix: ['error', 'as-needed'],
     semi: ['error', 'never'],
-
-    'jsx-a11y/label-has-for': 'off', // Depricated rule - remove when airbnb is updated
-
-    // Rules we need to decide how to handle
-    'function-call-argument-newline': 'off',
-    'function-paren-newline': 'off',
-    'prefer-regex-literals': 'off',
-    'no-promise-executor-return': 'off',
-    'react/function-component-definition': 'off',
   },
 }
 
