@@ -94,6 +94,7 @@ const eslintRules = {
     'function-paren-newline': 'off',
     'prefer-regex-literals': 'off',
     'no-promise-executor-return': 'off',
+    'react/function-component-definition': 'off',
   },
 }
 
