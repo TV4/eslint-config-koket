@@ -49,9 +49,15 @@ const eslintRules = {
     'max-len': [
       'error',
       {
-        'code': 150,  // We allow 150 chars per line
-        'tabWidth': 2,
-      }
+        code: 150, // We allow 150 chars per line
+        tabWidth: 2,
+        ignoreComments: true,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+      },
     ], // We allow 150 chars per line
     'no-await-in-loop': 'off', // We allow await in loops
     'no-continue': 'off', // We allow continue in loops
