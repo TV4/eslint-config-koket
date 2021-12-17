@@ -46,6 +46,13 @@ const eslintRules = {
     'function-paren-newline': 'off', // We allow line breaks in argument lists
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
+    'max-len': [
+      'error',
+      {
+        'code': 150,  // We allow 150 chars per line
+        'tabWidth': 2,
+      }
+    ], // We allow 150 chars per line
     'no-await-in-loop': 'off', // We allow await in loops
     'no-continue': 'off', // We allow continue in loops
     'no-multiple-empty-lines': ['error', { max: 1 }], // We only allow one empty line
