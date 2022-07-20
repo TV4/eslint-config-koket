@@ -59,7 +59,7 @@ const eslintRules = {
         ignoreTrailingComments: true,
         ignoreUrls: true,
       },
-    ], // We allow 150 chars per line
+    ],
     'no-await-in-loop': 'off', // We allow await in loops
     'no-continue': 'off', // We allow continue in loops
     'no-multiple-empty-lines': ['error', { max: 1 }], // We only allow one empty line
