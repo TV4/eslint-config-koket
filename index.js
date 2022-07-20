@@ -46,6 +46,7 @@ const eslintRules = {
     'function-paren-newline': 'off', // We allow line breaks in argument lists
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
     'import/prefer-default-export': 'off', // We allow named exports even if there's just one
+    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
     'max-len': [
       'error',
@@ -87,7 +88,6 @@ const eslintRules = {
       namedComponents: 'arrow-function',
       unnamedComponents: 'arrow-function',
     }],
-    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }],
     'react/jsx-closing-bracket-location': 'off', // We don't enforce the location of the closing bracket
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }], // We allow jsx in js-files
     'react/jsx-first-prop-new-line': 'off', // We can decide how to format the props from case to case
