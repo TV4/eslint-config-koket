@@ -46,7 +46,7 @@ const eslintRules = {
     'function-paren-newline': 'off', // We allow line breaks in argument lists
     'import/no-self-import': 'off', // We had problems with this rule. For example files named 'espress.js' etc. Turning it off for now
     'import/prefer-default-export': 'off', // We allow named exports even if there's just one
-    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }],
+    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], aspects: ['invalidHref', 'preferButton'] }], // To avoid warnings when using next/link
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }], // We allow either nesting of htmlFor association
     'max-len': [
       'error',
