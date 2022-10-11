@@ -118,6 +118,15 @@ const eslintRules = {
         project: ['./tsconfig.json'],
       },
       rules: {
+        '@typescript-eslint/comma-dangle': [
+          'error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            functions: 'never',
+          },
+        ],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
         '@typescript-eslint/semi': ['error', 'never'],
         '@typescript-eslint/space-before-function-paren': ['error', {
