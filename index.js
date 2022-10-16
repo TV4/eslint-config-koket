@@ -134,6 +134,11 @@ const eslintRules = {
           named: 'never',
           asyncArrow: 'always',
         }],
+        'react/require-default-props': ['error', { // We use default arguments for function components instead of defaultProps
+          forbidDefaultForRequired: true,
+          classes: 'defaultProps',
+          functions: 'defaultArguments',
+        }],
         'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }], // We allow jsx in tsx-files
       },
     },
