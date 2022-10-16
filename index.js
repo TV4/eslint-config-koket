@@ -124,7 +124,7 @@ const eslintRules = {
             objects: 'always-multiline',
             imports: 'always-multiline',
             exports: 'always-multiline',
-            enums:  'always-multiline',
+            enums: 'always-multiline',
             functions: 'never',
           },
         ],
