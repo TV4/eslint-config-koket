@@ -83,7 +83,7 @@ const eslintRules = {
     ],
     'no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
     'object-curly-newline': 'off', // We don’t enforce strict formatting of objects
-    'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypesv
+    'react/forbid-prop-types': 'off', // We allow arrays and objects as proptypes
     'react/function-component-definition': ['error', { // We use arrow functions for our components
       namedComponents: 'arrow-function',
       unnamedComponents: 'arrow-function',
