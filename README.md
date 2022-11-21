@@ -11,7 +11,7 @@ create a ```.eslintrc``` file:
 
 ```
 {
-  "extends": "koket",
+  "extends": "koket"
 }
 ```
 
