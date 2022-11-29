@@ -138,6 +138,10 @@ const eslintRules = {
             '^\\.(?!/?$)',
             '^\\./?$',
           ],
+          // SVG imports
+          [
+            '^.+\\.?(svg)$',
+          ],
           // Style imports
           [
             '^.+\\.?(css)$',
