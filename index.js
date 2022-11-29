@@ -200,6 +200,17 @@ const eslintRules = {
           named: 'never',
           asyncArrow: 'always',
         }],
+        '@typescript-eslint/type-annotation-spacing': [
+          'error',
+          {
+            overrides: {
+              colon: {
+                before: false,
+                after: true,
+              },
+            },
+          },
+        ],
         'react/require-default-props': ['error', { // We use default arguments for function components instead of defaultProps
           forbidDefaultForRequired: true,
           classes: 'defaultProps',
