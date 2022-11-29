@@ -184,10 +184,16 @@ const eslintRules = {
                 multiline: {
                   delimiter: 'none',
                 },
+                singleline: {
+                  delimiter: 'comma',
+                },
               },
               typeLiteral: {
                 multiline: {
                   delimiter: 'none',
+                },
+                singleline: {
+                  delimiter: 'comma',
                 },
               },
             },
