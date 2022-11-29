@@ -6,6 +6,7 @@ const eslintRules = {
   plugins: [
     'import',
     'react',
+    'simple-import-sort',
   ],
   env: {
     jest: true,
@@ -97,6 +98,53 @@ const eslintRules = {
     'react/no-danger': 'off', // Sometimes we need to use dangerouslySetInnerHTML
     'react/self-closing-comp': 'off', // We don't requre components to be self closed. <div id="video-player"></div> is ok
     'react/sort-comp': 'off', // We allow excpetions to this strict sorting of methods
+    'simple-import-sort/imports': [
+      'error', {
+        groups: [
+          // `react` and `next` related packages come first.
+          [
+            '^react',
+            '^next',
+            '^@?\\w',
+          ],
+          // TV4 packages
+          [
+            '^(@tv4)(/.*|$)',
+          ],
+          // Alias
+          [
+            '^(@@types)(/.*|$)',
+          ],
+          [
+            '^(@@utils)(/.*|$)',
+          ],
+          [
+            '^(@@contexts)(/.*|$)',
+          ],
+          [
+            '^(@@components)(/.*|$)',
+          ],
+          [
+            '^(@@.*)(/.*|$)',
+          ],
+          // Parent imports
+          [
+            '^\\.\\.(?!/?$)',
+            '^\\.\\./?$',
+          ],
+          // Other relative imports
+          [
+            '^\\./(?=.*/)(?!/?$)',
+            '^\\.(?!/?$)',
+            '^\\./?$',
+          ],
+          // Style imports
+          [
+            '^.+\\.?(css)$',
+          ],
+        ],
+      },
+    ],
     'space-before-function-paren': ['error', {
       anonymous: 'never',
       named: 'never',
