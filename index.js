@@ -176,6 +176,23 @@ const eslintRules = {
             functions: 'never',
           },
         ],
+        '@typescript-eslint/member-delimiter-style': [
+          'error',
+          {
+            overrides: {
+              interface: {
+                multiline: {
+                  delimiter: 'none',
+                },
+              },
+              typeLiteral: {
+                multiline: {
+                  delimiter: 'none',
+                },
+              },
+            },
+          },
+        ],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, variables: false }], // We like to keep the most important functions at the top of the file
         '@typescript-eslint/semi': ['error', 'never'],
         '@typescript-eslint/space-before-function-paren': ['error', {
