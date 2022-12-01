@@ -102,7 +102,7 @@ const eslintRules = {
       'error', {
         groups: [
           // Side effect imports. For example 'dotenv/config' and 'newrelic'
-          ["^\\u0000"],
+          ['^\\u0000'],
           // `react` and `next` related packages come first.
           [
             '^react',
