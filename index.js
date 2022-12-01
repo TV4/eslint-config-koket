@@ -101,6 +101,8 @@ const eslintRules = {
     'simple-import-sort/imports': [
       'error', {
         groups: [
+          // Side effect imports. For example 'dotenv/config' and 'newrelic'
+          ["^\\u0000"],
           // `react` and `next` related packages come first.
           [
             '^react',
