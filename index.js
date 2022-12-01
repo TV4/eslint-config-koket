@@ -138,6 +138,10 @@ const eslintRules = {
             '^\\.(?!/?$)',
             '^\\./?$',
           ],
+          // Graphql imports
+          [
+            '^.+\\.?(graphql)$',
+          ],
           // SVG imports
           [
             '^.+\\.?(svg)$',
