@@ -25,6 +25,7 @@ const eslintRules = {
           '.', // app-path directory - for rule import/no-unresolved
         ],
       },
+      typescript: true,
     },
   },
   rules: {
