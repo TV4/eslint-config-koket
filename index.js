@@ -17,17 +17,6 @@ const eslintRules = {
       jsx: true,
     },
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        moduleDirectory: [
-          'node_modules',
-          '.', // app-path directory - for rule import/no-unresolved
-        ],
-      },
-      typescript: true,
-    },
-  },
   rules: {
     'arrow-body-style': 'off', // We can choose to include the braces on one-liners if we think it makes the code more readable
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
