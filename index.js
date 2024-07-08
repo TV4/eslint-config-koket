@@ -110,19 +110,24 @@ const eslintRules = {
           ],
           // Alias
           [
-            '^(@@types)(/.*|$)',
+            '^(@/types)(/.*|$)',
+          ], [
+            '^(@/.*)(/.*|$)',
           ],
           [
-            '^(@@utils)(/.*|$)',
+            '^(@@types)(/.*|$)', // todo: remove this line when we have removed these imports from all projects
           ],
           [
-            '^(@@contexts)(/.*|$)',
+            '^(@@utils)(/.*|$)', // todo: remove this line when we have removed these imports from all projects
           ],
           [
-            '^(@@components)(/.*|$)',
+            '^(@@contexts)(/.*|$)', // todo: remove this line when we have removed these imports from all projects
           ],
           [
-            '^(@@.*)(/.*|$)',
+            '^(@@components)(/.*|$)', // todo: remove this line when we have removed these imports from all projects
+          ],
+          [
+            '^(@@.*)(/.*|$)', // todo: remove this line when we have removed these imports from all projects
           ],
           // Parent imports
           [
