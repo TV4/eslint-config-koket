@@ -167,6 +167,7 @@ const eslintRules = {
             functions: 'never',
           },
         ],
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'], // We use type instead of interface
         '@typescript-eslint/member-delimiter-style': [
           'error',
           {
